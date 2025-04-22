@@ -103,6 +103,8 @@ function checkForWins() {
     ) {
       if (gameMode === "friend") {
         statusText.textContent = `Player ${lastUsed} Wins!`;
+        showWinningCells(+comb[0], +comb[1], +comb[2], "green");
+        statusText.style.color = "green";
       } else {
         if (lastUsed === "X") {
           statusText.textContent = "You were right, you win!";
