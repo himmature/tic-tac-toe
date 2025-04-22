@@ -4,28 +4,35 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" type="module" async></script>
   </head>
   <body>
     <h1>Tic Tac Toe</h1>
-
-    <div class="container" id="container">
-      <div id="0"></div>
-      <div id="1"></div>
-      <div id="2"></div>
-      <div id="3"></div>
-      <div id="4"></div>
-      <div id="5"></div>
-      <div id="6"></div>
-      <div id="7"></div>
-      <div id="8"></div>
+    <div id="controls" class="controls">
+      <div>
+        <button id="bot-btn">Play with dumb Bot</button>
+      </div>
+      <div>
+        <button id="friend-btn">Play with dumb Friend</button>
+      </div>
     </div>
-    <button id="reset">Reset</button>
-    <p id="statusText"></p>
+
+    <div id="game-container" style="display: none">
+      <div class="container" id="container">
+        <div id="0"></div>
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+        <div id="8"></div>
+      </div>
+      <button class="game-buttons" id="reset">Reset</button>
+      <button class="game-buttons" id="back-to-home">Back to Home</button>
+      <p id="statusText"></p>
+    </div>
   </body>
 </html>

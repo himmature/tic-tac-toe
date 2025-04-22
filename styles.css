@@ -1,3 +1,9 @@
+body {
+  text-align: center;
+  background-color: rgb(180, 202, 202);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container {
   width: 230px;
   margin: 0 auto;
@@ -11,7 +17,7 @@
   background-color: #cfcfcf;
   border: 4px solid black;
   padding: 5%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
   border-radius: 5px;
 }
@@ -20,7 +26,7 @@
   cursor: pointer;
 }
 
-#reset {
+.game-buttons {
   margin: 50px;
   padding: 4px;
   border-radius: 20px;
@@ -30,16 +36,30 @@
   font-size: large;
 }
 
-#reset:click {
+.game-buttons:active {
   box-shadow: 0 2px 2px 0;
   border: 1px solid #ffffff;
 }
 
-body {
-  text-align: center;
-  background-color: rgb(180, 202, 202);
-}
-
 #statusText {
   font-size: 50px;
+}
+
+.controls {
+  margin: 50px 0;
+}
+
+.controls button {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  font-size: larger;
+  font-weight: bolder;
+  box-shadow: 0 5px 5px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.controls button:active {
+  box-shadow: 5px 5px;
 }
