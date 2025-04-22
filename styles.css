@@ -1,0 +1,45 @@
+.container {
+  width: 230px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.container > div {
+  width: 70px;
+  height: 70px;
+  background-color: #cfcfcf;
+  border: 4px solid black;
+  padding: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  border-radius: 5px;
+}
+
+.container > div:hover {
+  cursor: pointer;
+}
+
+#reset {
+  margin: 50px;
+  padding: 4px;
+  border-radius: 20px;
+  width: 150px;
+  box-shadow: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: large;
+}
+
+#reset:click {
+  box-shadow: 0 2px 2px 0;
+  border: 1px solid #ffffff;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(180, 202, 202);
+}
+
+#statusText {
+  font-size: 50px;
+}
